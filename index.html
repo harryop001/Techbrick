@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror World</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c5de6816a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>App Designer</p>
+            <h1>Hi I'm <span>Abhi <br> Gupta. </span>The <br> Best App Ever.</h1>
+        </div>
+    </div>
+</div>
+
+<!----------------------products----------------------->
+
+<div id="products">
+    <div class="container">
+        <h1 class="sub-heading">Products</h1>
+        <div class="row">
+            <div class="product-1">
+                <img src="images/1.jpg" width="300px" height="400vh">
+                <h4><p>Rs.400</p></h1>
+            </div>
+            <div class="product-1">
+                <img src="images/2.jpg" width="300px" height="400vh">
+                <h4><p>Rs.400</p></h1>
+            </div>
+            <div class="product-1">
+                <img src="images/3.jpg" width="300px" height="400vh">
+                <h4><p>Rs.400</p></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px"
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
